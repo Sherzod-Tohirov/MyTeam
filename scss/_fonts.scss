@@ -2,11 +2,37 @@
 /*Main font family */
 
 @font-face {
-    font-family: "font-family"; 
+    font-family: "Livvic"; 
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/.woff2") format("woff2"),
-         url("../fonts/.woff") format("woff");
+    src: url("../fonts/regular.woff2") format("woff2"),
+         url("../fonts/regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Livvic"; 
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+    src: url("../fonts/medium_italic.woff2") format("woff2"),
+         url("../fonts/medium_italic.woff") format("woff");
+}
+   
+
+@font-face {
+    font-family: "Livvic"; 
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/semibold.woff2") format("woff2"),
+         url("../fonts/semibold.woff") format("woff");
+}
+   
+@font-face {
+    font-family: "Livvic"; 
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/bold.woff2") format("woff2"),
+         url("../fonts/bold.woff") format("woff");
 }
    
 
