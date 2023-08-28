@@ -1,0 +1,36 @@
+/*Html value for sticky footer*/
+
+
+html {
+  height: 100%;
+}
+
+
+
+/*Box element property*/
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+/*Defauly body properties*/
+
+body {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  margin: 0;
+  font-family: font-family, Arial, sans-serif;
+}
+
+
+/*Default image properties*/
+
+img {
+  display: block;
+  height: auto;
+}

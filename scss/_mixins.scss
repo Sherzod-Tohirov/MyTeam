@@ -1,0 +1,52 @@
+// List unstyles mixin
+
+@mixin list-unstyled {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+
+// Flexbox mixin
+
+@mixin flexbox($dir:row, $align:center, $justify:center) {
+	display: flex;
+	flex-direction: $dir;
+	align-items: $align;
+	justify-content: $justify;
+}
+
+// Remove margin mixin
+
+@mixin remove-margin {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+@mixin typography($fontFamily: inherit, $fontSize: 16px, $fontSize: 120%, $textAlign: center, $textColor: #000) {
+	font-family: $fontFamily;
+	font-size: $fontSize;
+	line-height: $fontSize;
+	text-align: $textAlign;
+	color: $textColor;
+}
+
+
+// Create overlay mixin
+
+
+@mixin overlay {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+    pointer-events: all;
+    display: none;
+
+}

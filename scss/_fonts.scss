@@ -1,0 +1,12 @@
+
+/*Main font family */
+
+@font-face {
+    font-family: "font-family"; 
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/.woff2") format("woff2"),
+         url("../fonts/.woff") format("woff");
+}
+   
+
