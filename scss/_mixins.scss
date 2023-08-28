@@ -25,10 +25,10 @@
 }
 
 
-@mixin typography($fontFamily: inherit, $fontSize: 16px, $fontSize: 120%, $textAlign: center, $textColor: #000) {
+@mixin typography($fontFamily: inherit, $fontSize: 16px, $lineHeight: 120%, $textAlign: center, $textColor: #000) {
 	font-family: $fontFamily;
 	font-size: $fontSize;
-	line-height: $fontSize;
+	line-height: $lineHeight;
 	text-align: $textAlign;
 	color: $textColor;
 }
