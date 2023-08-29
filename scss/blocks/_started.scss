@@ -1,0 +1,52 @@
+@use "../mixins" as mx;
+
+.started{
+  padding-top: 83px;
+  padding-bottom: 83px;
+  background-color: var(--main-light-coral-color);
+  background-image: url("../../images/svg/started-shape.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.started__inner{
+  @include mx.flexbox($dir:column, $align:center, $justify:center)
+}
+.started__title{
+  margin-top: 0;
+  margin-bottom: 24px;
+  @include mx.typography(inherit,700,32px,32px,center, var(--main-sacramento-green-color));
+}
+.started__link{
+  max-width: 153px;
+  width: 100%;
+  padding: 9px 13px 11px;
+  @include mx.typography(inherit,600,18px,28px,center, var(--main-sacramento-green-color));
+  text-decoration: none;
+  border-radius: 24px;
+border: 2px solid var(--main-sacramento-green-color);
+transition: color 0.3s linear, background-color 0.3s linear ;
+&:hover{
+  color: #fff;
+  background-color: var(--main-sacramento-green-color);
+}
+}
+
+@media only screen and (min-width: 700px){
+  .started{
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+  .started__inner{
+    @include mx.flexbox(row, center, center)
+  }
+  .started__title{
+    margin-bottom: 0;
+    margin-right: 260px;
+    @include mx.typography(inherit,700,48px,48px,center, var(--main-sacramento-green-color));
+  }
+}
+@media only screen and (min-width: 1440px){
+  .started{
+    background-position:calc(50% - 686px) bottom;
+  }
+}

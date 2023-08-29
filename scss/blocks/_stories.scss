@@ -1,0 +1,136 @@
+@use "../mixins" as mx;
+ 
+.stories{
+  padding-top: 140px;
+  padding-bottom: 164px;
+  background-image: url("../../images/svg/stories_shape.svg"),url("../../images/svg/storiea_shapeb.svg");
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
+}
+.stories__title-wrapper{
+  max-width: 327px;
+  width: 100%;
+  margin: 0 auto 48px;
+}
+.stories__title{
+  @include mx.remove-margin;
+  @include mx.typography($fontFamily: inherit, $fontWeight: 700, $fontSize: 32px, $lineHeight: 32px, $textAlign: center, $textColor: #fff)
+}
+.stories__span{
+  @include mx.typography(inherit, 700, 32px, 32px, center, var(--main-rapture-blue-color))
+}
+.stories__list{
+  @include mx.list-unstyled;
+}
+.stories__item{
+  position: relative;
+  max-width: 327px;
+  width: 100%;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  padding-top: 36px;
+  padding-bottom: 18px;
+
+}
+.stories__quote{
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 16px;
+  @include mx.typography( inherit,600,15px, 25px,center,#fff);
+}
+.stories__subtitle{
+  margin-top: 0;
+  margin-bottom: 2px;
+  @include mx.typography( inherit,700,18px, 28px,center,var(--main-rapture-blue-color));
+}
+.stories__desc{
+  margin-top: 0;
+  margin-bottom: 16px;
+  @include mx.typography( inherit,500,13px, 18px,center,#fff);
+  font-style: italic;
+}
+.stories__item::before{
+  position: absolute;
+  top: 0;
+  left: calc(50% - 35px );
+  z-index: -1;
+  width: 67px;
+  height: 56px;
+  display: inline-block;
+  content:"";
+  background-image: url("../../images/svg/quote.svg");
+  background-repeat: no-repeat;
+}
+.stories__item::after{
+  position: relative;
+  bottom: 0;
+  left: calc(50% - 35px );
+  z-index: -1;
+  width: 62px;
+  height: 62px;
+  display: inline-block;
+  content:"";
+  background-image: url("../../images/png/kendy.png");
+  background-repeat: no-repeat;
+  background-size: 62px;
+}
+.stories__item:nth-child(2)::after{
+  background-image: url(../../images/png/aiysha.png);
+}
+.stories__item:nth-child(3)::after{
+  background-image: url(../../images/png/artur.png);
+}
+.stories__item:last-child{
+  margin-bottom: 0;
+}
+ 
+@media only screen and (min-width: 700px){
+.stories{
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+.stories__title-wrapper{
+  max-width: 473px;
+  margin-bottom: 48px;
+}
+.stories__item{
+  max-width: 573px;
+}
+}
+@media only screen and (min-width: 1140px){
+  .stories{
+    padding-top: 140px;
+    padding-bottom: 150px;
+  
+  }
+  .stories__title-wrapper{
+    max-width: 932px;
+    margin-bottom: 56px;
+  }
+  .stories__title{
+  @include mx.typography($fontFamily: inherit, $fontWeight: 700, $fontSize: 48px, $lineHeight: 48px, $textAlign: center, $textColor: #fff)
+
+  }
+  .stories__list{
+    @include mx.flexbox(row, $align:center, $justify:center);
+  }
+  .stories__item{
+    max-width: 350px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .stories__item:last-child{
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1440px){
+  .stories{
+    background-position:calc(50% - 686px) top, calc(50% + 660px) bottom;
+  }
+}
+
+
+
