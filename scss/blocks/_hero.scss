@@ -120,6 +120,7 @@
   
      .hero__title {
       margin-top: 0;
+      margin-bottom: 0;
       margin-right: 30px;
       @include mx.typography(inherit, 700, 100px, 100px, start, var(--main-white-color));
      }
