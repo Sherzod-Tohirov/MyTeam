@@ -12,8 +12,7 @@ elBarBtn.addEventListener('click', (evt) => {
 
 elCloseBtn.addEventListener('click', (evt) => {
     elHeaderInner.classList.remove('move-nav');
-    
-    console.log(window.innerWidth);
+
     setTimeout(() => {
       if(window.innerWidth < 500) {
         elHeaderInner.style.display = 'none';

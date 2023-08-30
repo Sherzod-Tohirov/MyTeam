@@ -1028,7 +1028,7 @@ img {
 @media only screen and (min-width: 1024px) {
   .hero {
     padding-bottom: 250px;
-    background: url("../images/svg/heroleftbg.svg") no-repeat calc(50% - 760px) calc(50% - 158px), url("../images/svg/herorightbg.svg") no-repeat calc(50% + 390px) calc(50% + 250px);
+    background: url("../images/svg/heroleftbg.svg") no-repeat calc(50% - 760px) calc(50% - 125px), url("../images/svg/herorightbg.svg") no-repeat calc(50% + 390px) calc(50% + 250px);
   }
   .hero__wrapper {
     display: -webkit-box;
