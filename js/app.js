@@ -7,16 +7,19 @@ elBarBtn.addEventListener('click', (evt) => {
   setTimeout(() => {
     elHeaderInner.classList.toggle('move-nav'); 
   }, 10); 
-  
+
 });
 
 elCloseBtn.addEventListener('click', (evt) => {
     elHeaderInner.classList.remove('move-nav');
-
+    
     console.log(window.innerWidth);
-    if(window.innerWidth < 500) {
-      elHeaderInner.style.display = 'none';
-    }else {
-      elHeaderInner.style.display = 'flex';
-    }
+    setTimeout(() => {
+      if(window.innerWidth < 500) {
+        elHeaderInner.style.display = 'none';
+      }else {
+        elHeaderInner.style.display = 'flex';
+      }
+    }, 400); 
+   
 });
