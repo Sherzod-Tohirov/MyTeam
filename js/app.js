@@ -14,11 +14,8 @@ elCloseBtn.addEventListener('click', (evt) => {
     elHeaderInner.classList.remove('move-nav');
 
     setTimeout(() => {
-      if(window.innerWidth < 500) {
-        elHeaderInner.style.display = 'none';
-      }else {
-        elHeaderInner.style.display = 'flex';
-      }
+      elHeaderInner.style.display = 'none';
     }, 400); 
    
 });
+
