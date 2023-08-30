@@ -2,6 +2,8 @@ const elBarBtn = document.querySelector('.js-bar-btn');
 const elCloseBtn = document.querySelector('.js-close-btn');
 const elHeaderInner = document.querySelector('.js-header-inner');
 
+
+
 elBarBtn.addEventListener('click', (evt) => {
   elHeaderInner.style.display = 'flex';
   setTimeout(() => {
@@ -19,3 +21,10 @@ elCloseBtn.addEventListener('click', (evt) => {
    
 });
 
+window.addEventListener('resize', (evt) => {
+  if(screen.width >= 501) {
+    elHeaderInner.style.display = 'flex';
+  }else {
+    elHeaderInner.style.display = 'none';
+  }
+});
