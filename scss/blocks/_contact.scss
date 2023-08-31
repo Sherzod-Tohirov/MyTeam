@@ -1,5 +1,45 @@
 @use "../mixins" as mx;
 
+.contact__input {
+    width: 100%;
+    padding: 0 14px 16px;
+    @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
+    letter-spacing: -0.115px;
+    border: none;
+    border-bottom: 1px solid var(--main-white-color);
+    background-color: transparent;
+}
+
+.contact__input--msg {
+    height: 84px;
+    resize: none;
+}
+
+.contact__btn {
+    min-width: 123px;
+    padding: 9px 9px 11px;
+    @include mx.typography(inherit, 600, 18px, 156%, center, var(--main-deep-jungle-green-color));
+    border-radius: 24px;
+    border: 2px solid var(--main-white-color);
+    background-color: var(--main-white-color);
+    cursor: pointer;
+}
+
+.contact__input::placeholder {
+    @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
+    opacity: 0.6;
+}
+
+$img_list: "expert_person", "settings", "bars";
+$counter: 1;
+@each $img in $img_list {
+    .contact__item:nth-child(#{$counter})::before {
+        background-image: url("../images/svg/#{$img}.svg");
+    }
+    $counter: $counter + 1;
+}
+
+
 @media only screen and (max-width: 355px) {  
     .contact {
         padding-bottom: 88px;
@@ -58,15 +98,6 @@
         margin-bottom: 40px;
     }
 
-    $img_list: "expert_person", "settings", "bars";
-    $counter: 1;
-    @each $img in $img_list {
-        .contact__item:nth-child(#{$counter})::before {
-            background-image: url("../images/svg/#{$img}.svg");
-        }
-        $counter: $counter + 1;
-    }
-
     .contact__form-wrapper {
         align-self: stretch;
         @include mx.flexbox(row, stretch, center);
@@ -77,38 +108,10 @@
         width: 100%;
     }
 
-    .contact__input {
-        width: 100%;
-        padding: 0 14px 16px;
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        border: none;
-        border-bottom: 1px solid var(--main-white-color);
-        background-color: transparent;
-    }
-
     .contact__input:not(:last-child) {
         margin-bottom: 24px;
     }
 
-    .contact__input::placeholder {
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        opacity: 0.6;
-    }
-
-    .contact__input--msg {
-        height: 84px;
-        resize: none;
-    }
-
-    .contact__btn {
-        min-width: 123px;
-        padding: 9px 9px 11px;
-        @include mx.typography(inherit, 600, 18px, 156%, center, var(--main-deep-jungle-green-color));
-        border-radius: 24px;
-        border: 2px solid var(--main-white-color);
-        background-color: var(--main-white-color);
-        cursor: pointer;
-    }
 }
 
 @media only screen and (min-width: 355px) and (max-width: 500px) { 
@@ -169,15 +172,6 @@
         margin-bottom: 40px;
     }
 
-    $img_list: "expert_person", "settings", "bars";
-    $counter: 1;
-    @each $img in $img_list {
-        .contact__item:nth-child(#{$counter})::before {
-            background-image: url("../images/svg/#{$img}.svg");
-        }
-        $counter: $counter + 1;
-    }
-
     .contact__form-wrapper {
         align-self: stretch;
         @include mx.flexbox(row, stretch, center);
@@ -188,38 +182,10 @@
         width: 100%;
     }
 
-    .contact__input {
-        width: 100%;
-        padding: 0 14px 16px;
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        border: none;
-        border-bottom: 1px solid var(--main-white-color);
-        background-color: transparent;
-    }
-
     .contact__input:not(:last-child) {
         margin-bottom: 24px;
     }
 
-    .contact__input::placeholder {
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        opacity: 0.6;
-    }
-
-    .contact__input--msg {
-        height: 84px;
-        resize: none;
-    }
-
-    .contact__btn {
-        min-width: 123px;
-        padding: 9px 9px 11px;
-        @include mx.typography(inherit, 600, 18px, 156%, center, var(--main-deep-jungle-green-color));
-        border-radius: 24px;
-        border: 2px solid var(--main-white-color);
-        background-color: var(--main-white-color);
-        cursor: pointer;
-    }
 }
 
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
@@ -287,15 +253,6 @@
         margin-bottom: 52px;
     }
 
-    $img_list: "expert_person", "settings", "bars";
-    $counter: 1;
-    @each $img in $img_list {
-        .contact__item:nth-child(#{$counter})::before {
-            background-image: url("../images/svg/#{$img}.svg");
-        }
-        $counter: $counter + 1;
-    }
-
     .contact__form-wrapper {
         width: 100%;
         @include mx.flexbox(row, stretch, center);
@@ -307,38 +264,10 @@
         width: 100%;
     }
 
-    .contact__input {
-        width: 100%;
-        padding: 0 14px 16px;
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        border: none;
-        border-bottom: 1px solid var(--main-white-color);
-        background-color: transparent;
-    }
-
     .contact__input:not(:last-child) {
         margin-bottom: 24px;
     }
 
-    .contact__input::placeholder {
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        opacity: 0.6;
-    }
-
-    .contact__input--msg {
-        height: 84px;
-        resize: none;
-    }
-
-    .contact__btn {
-        min-width: 123px;
-        padding: 9px 9px 11px;
-        @include mx.typography(inherit, 600, 18px, 156%, center, var(--main-deep-jungle-green-color));
-        border-radius: 24px;
-        border: 2px solid var(--main-white-color);
-        background-color: var(--main-white-color);
-        cursor: pointer;
-    }
 }
 
 @media only screen and (min-width: 1024px) {  
@@ -405,15 +334,6 @@
         margin-bottom: 52px;
     }
 
-    $img_list: "expert_person", "settings", "bars";
-    $counter: 1;
-    @each $img in $img_list {
-        .contact__item:nth-child(#{$counter})::before {
-            background-image: url("../images/svg/#{$img}.svg");
-        }
-        $counter: $counter + 1;
-    }
-
     .contact__form-wrapper {
         @include mx.flexbox(row, stretch, center);
         max-width: 540px;
@@ -426,36 +346,8 @@
         width: 100%;
     }
 
-    .contact__input {
-        width: 100%;
-        padding: 0 14px 16px;
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        border: none;
-        border-bottom: 1px solid var(--main-white-color);
-        background-color: transparent;
-    }
-
     .contact__input:not(:last-child) {
         margin-bottom: 24px;
     }
 
-    .contact__input::placeholder {
-        @include mx.typography(inherit, 600, 15px, 167%, start, var(--main-white-color));
-        opacity: 0.6;
-    }
-
-    .contact__input--msg {
-        height: 84px;
-        resize: none;
-    }
-
-    .contact__btn {
-        min-width: 123px;
-        padding: 9px 9px 11px;
-        @include mx.typography(inherit, 600, 18px, 156%, center, var(--main-deep-jungle-green-color));
-        border-radius: 24px;
-        border: 2px solid var(--main-white-color);
-        background-color: var(--main-white-color);
-        cursor: pointer;
-    }
 }
