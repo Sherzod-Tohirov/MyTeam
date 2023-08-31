@@ -25,6 +25,8 @@
 }
 
 
+// Typography mixin
+
 @mixin typography($fontFamily: inherit, $fontWeight: inherit, $fontSize: 16px, $lineHeight: 120%, $textAlign: center, $textColor: #000) {
 	font-family: $fontFamily;
 	font-weight: $fontWeight;
