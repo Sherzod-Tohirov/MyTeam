@@ -34,5 +34,14 @@
     src: url("../fonts/bold.woff2") format("woff2"),
          url("../fonts/bold.woff") format("woff");
 }
+
+@font-face {
+    font-family: "Livvic"; 
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+    src: url("../fonts/bold_italic.woff2") format("woff2"),
+         url("../fonts/bold_italic.woff") format("woff");
+}
    
 

@@ -30,6 +30,22 @@
     opacity: 0.6;
 }
 
+.invalid-input {
+    margin-bottom: 8px !important;
+    border-bottom-color: var(--main-light-coral-color) !important;
+}
+
+.invalid-input::placeholder {
+    color: var(--main-light-coral-color);
+}
+
+.error-msg {
+    margin-left: 14px;
+    margin-bottom: 17px;
+    @include mx.typography(inherit, 700, 10px, normal, start, var(--main-light-coral-color));
+    font-style: italic;
+}
+
 $img_list: "expert_person", "settings", "bars";
 $counter: 1;
 @each $img in $img_list {
